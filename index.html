@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Your Name – Resume</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="hero">
+    <nav class="nav">
+      <a href="#about">About</a>
+      <a href="#experience">Experience</a>
+      <a href="#skills">Skills</a>
+      <a href="#education">Education</a>
+      <a href="#contact">Contact</a>
+      <button id="theme-toggle" aria-label="Toggle dark mode">🌙</button>
+    </nav>
+    <div class="hero-content">
+      <h1>Shivani khichi</h1>
+      <p class="tagline">Web Developer · <span id="typed"></span></p>
+      <a class="btn" href="#contact">Get in touch</a>
+      <button class="btn btn-outline" onclick="window.print()">Download / Print PDF</button>
+    </div>
+  </header>
+
+  <main>
+    <section id="about">
+      <h2>About Me</h2>
+      <p>
+        I'm a motivated developer who enjoys building clean, fast and accessible
+        websites. I like turning ideas into working products and I'm always
+        learning something new.
+      </p>
+    </section>
+
+    <section id="experience">
+      <h2>Experience</h2>
+      <div class="timeline">
+        <article class="item">
+          <h3>Frontend Developer <span>· Company A</span></h3>
+          <small>2023 – Present</small>
+          <ul>
+            <li>Built responsive UIs with HTML, CSS and JavaScript.</li>
+            <li>Improved page load time by 35%.</li>
+          </ul>
+        </article>
+        <article class="item">
+          <h3>Junior Developer <span>· Company B</span></h3>
+          <small>2021 – 2023</small>
+          <ul>
+            <li>Maintained company websites and fixed bugs.</li>
+            <li>Collaborated with designers to ship new features.</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <section id="skills">
+      <h2>Skills</h2>
+      <div class="skills">
+        <div class="skill" data-level="90"><label>HTML</label><div class="bar"><div class="fill"></div></div></div>
+        <div class="skill" data-level="85"><label>CSS</label><div class="bar"><div class="fill"></div></div></div>
+        <div class="skill" data-level="80"><label>JavaScript</label><div class="bar"><div class="fill"></div></div></div>
+        <div class="skill" data-level="70"><label>Git</label><div class="bar"><div class="fill"></div></div></div>
+      </div>
+    </section>
+
+    <section id="education">
+      <h2>Education</h2>
+      <article class="item">
+        <h3>B.Tech in Computer Science <span>· Your University</span></h3>
+        <small>2017 – 2021</small>
+      </article>
+    </section>
+
+    <section id="contact">
+      <h2>Contact</h2>
+      <p>📧 <a href="mailto:you@example.com">you@example.com</a></p>
+      <p>🔗 <a href="https://linkedin.com/in/yourname" target="_blank" rel="noopener">LinkedIn</a>
+         · <a href="https://github.com/yourname" target="_blank" rel="noopener">GitHub</a></p>
+    </section>
+  </main>
+
+  <footer>© <span id="year"></span> Your Name</footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
